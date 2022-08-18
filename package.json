@@ -1,0 +1,23 @@
+{
+  "name": "electron-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnooliver7/electron-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunnooliver7/electron-sandbox/issues"
+  },
+  "homepage": "https://github.com/brunnooliver7/electron-sandbox#readme",
+  "devDependencies": {
+    "electron": "^20.0.2"
+  }
+}

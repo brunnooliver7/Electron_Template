@@ -2,16 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Electron App</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="./preload.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <script src="./renderer.js"></script>
+  <body>
+    <div class="mainApp">
+      <div class="topBar">
+        <div class="titleBar">
+          <button id="showHideMenus" class="toggleButton">
+            <div class="menuSvg">
+          </button>
+          <img src="icons/play.svg" alt="" class="appIcon">
+          <div class="title">My App Top Bar</div>
+        </div>
+        <div class="titleBarBtns">
+          <button id="minimizeBtn" class="topBtn minimizeBtn">
+            <div class="minimizeSvg"></div>
+          </button>
+          <button id="maxResBtn" class="topBtn maximizeBtn">
+            <div class="maximizeSvg"></div>
+          </button>
+          <button id="closeBtn" class="topBtn closeBtn">
+            <div class="closeSvg"></div>
+          </button>
+        </div>
+      </div>
+      <div class="contentArea">
+        <div id="mySidebar" class="leftMenu"></div>
+        <div class="contentPages">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+          of Lorem Ipsum.
+        </div>
+      </div>
+    </div>
   </body>
 </html>
