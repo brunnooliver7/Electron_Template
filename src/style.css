@@ -5,6 +5,7 @@ html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #949AA7;
   background-color: #2C313C;
+  height: 100%;
 }
 
 .mainApp {
@@ -136,7 +137,7 @@ html, body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 
 .contentArea > .leftMenu {
