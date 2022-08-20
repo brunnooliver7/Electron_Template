@@ -36,7 +36,7 @@ html, body {
   width: 100%;
 }
 
-.titleBar > .toggleButton {
+.toggleButton {
   width: 40px;
   height: 40px;
   border: none;
@@ -46,24 +46,24 @@ html, body {
   background-color: #1B1D23;
 }
 
-.menuSvg {
-  padding: 10px;
-  background-image: url('../icons/menu.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.titleBar > .appIcon {
-  width: auto;
-  height: 25px;
-}
-
 .titleBar > .toggleButton:hover {
   background-color: #272C36;
 }
 
 .titleBar > .toggleButton:active {
   background-color: #4F9FEE;
+}
+
+.menuIcon {
+  padding: 10px;
+  background-image: url('../icons/menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.appIcon {
+  width: auto;
+  height: 25px;
 }
 
 .titleBar > img {
@@ -84,7 +84,7 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 120px;
+  /* width: 120px; */
   height: 40px;
 }
 
@@ -108,25 +108,28 @@ html, body {
   background-color: #4F9FEE;
 }
 
-.titleBarBtns > .minimizeBtn > .minimizeSvg {
+.titleBarBtns > .minimizeBtn > .minimizeIcon {
   padding: 10px;
   background-image: url('../icons/minus.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.titleBarBtns > .maximizeBtn > .maximizeSvg {
+.titleBarBtns > .maxResBtn > .maximizeIcon {
   padding: 7px;
   background-image: url('../icons/square.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.titleBarBtns > .restoreBtn {
+.titleBarBtns > .maxResBtn > .restoreIcon {
+  padding: 8px;
   background-image: url('../icons/restore.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.titleBarBtns > .closeBtn > .closeSvg {
+.titleBarBtns > .closeBtn > .closeIcon {
   padding: 10px;
   background-image: url('../icons/close.svg');
   background-repeat: no-repeat;
