@@ -39,3 +39,18 @@ ipc.on('isRestored', () => { changeMaxResBtn(false) })
 closeBtn.addEventListener('click', () => {
   ipc.send('closeApp')
 })
+
+// Show | Hide Menu
+
+var isLeftMenuActive = true
+const mySidebar = document.getElementById("mySidebar")
+
+showHideMenu.addEventListener('click', () => {
+  if (isLeftMenuActive) {
+    mySidebar.style.width = '0px'
+    isLeftMenuActive = false
+  } else {
+    mySidebar.style.width = '280px'
+    isLeftMenuActive = true
+  }
+})
